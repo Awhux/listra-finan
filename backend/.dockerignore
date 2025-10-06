@@ -1,0 +1,61 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+*~
+
+# Laravel
+.env
+.env.*
+!.env.example
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/testing/*
+storage/framework/views/*
+bootstrap/cache/*
+!storage/app/.gitignore
+!storage/framework/.gitignore
+!storage/logs/.gitignore
+!bootstrap/cache/.gitignore
+
+# Composer
+vendor/
+
+# Testing
+.phpunit.result.cache
+coverage/
+tests/
+
+# Documentation
+README.md
+CHANGELOG.md
+*.md
+!docker/*.conf
+!docker/*.ini
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+
+# Docker (exclude but keep docker config folder)
+docker-compose*.yml
+.dockerignore
+
+# Node (if any)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.log
+*.cache
